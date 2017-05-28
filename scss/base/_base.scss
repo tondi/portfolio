@@ -1,18 +1,25 @@
-// @font-face {
-//     font-family: "FontAwesome";
-//     src: url("../assets/FontAwesome.woff2")
-// }
+html {
+    height: 100%;
+}
+
 body,
 html {
-    width: 100vw;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font-family: Lato Light, FontAwesome;
+    font-family: Lato, FontAwesome;
     color: white;
     text-align: center;
-    display: flex;
+    // display: flex;
+}
+
+body {
+    // width: 100vw;
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     &::before {
+        backface-visibility: hidden;
         z-index: -1;
         position: fixed;
         left: 0;
@@ -26,8 +33,6 @@ html {
             image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./assets/me.jpg");
         }
     }
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 .container {

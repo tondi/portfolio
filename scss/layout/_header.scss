@@ -1,8 +1,9 @@
 .header-container {
     @include respond-to(small) {
         width: 20%;
-        flex: 2;
+        flex: 1;
     }
+    position: relative;
     header {
         font-size: 15vw;
         text-transform: uppercase;
@@ -16,19 +17,15 @@
         /* transform-origin: 18%; */
         @include respond-to(small) {
             margin: 0;
+            top: 0;
+            left: 20vw;
             font-size: 9em;
             text-transform: uppercase;
             position: absolute;
-            transform: rotateZ(-90deg);
             z-index: -1;
-            top: 50%;
-            left: 40px;
-            height: 40px;
-            padding: 0 1em;
             transform: rotateZ(-90deg);
-            line-height: 40px;
             font-weight: 700;
-            transform-origin: 100% 0;
+            transform-origin: 40% 270%;
         }
         // @include respond-to(large) {
         //     font-size: 9em;
