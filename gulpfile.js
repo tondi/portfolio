@@ -48,6 +48,8 @@ gulp.task('watch', function() {
 gulp.task('copy', function() {
   gulp.src(['index.html', 'style.css'])
   .pipe(gulp.dest('build'))
+
+  gulp.src('assets/*').pipe(gulp.dest('build/assets'));
 });
 
 gulp.task('build', ['_sass', 'copy']);
