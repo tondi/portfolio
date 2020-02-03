@@ -1,4 +1,4 @@
-$breakpoints: ( 'small': ( min-width : 767px), 'plus-small': ( min-width : 650px), 'medium': ( min-width : 992px), 'large': ( min-width: 1400px));
+$breakpoints: ( 'small': ( min-width: 767px), 'plus-small': ( min-width: 650px), 'medium': ( min-width: 992px), 'large': ( min-width: 1400px));
 @mixin respond-to($name) {
     // If the key exists in the map
     @if map-has-key($breakpoints, $name) {

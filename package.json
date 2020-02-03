@@ -1,23 +1,24 @@
 {
-  "name": "bob_the_builder",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "lite-server"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-embedlr": "^0.5.2",
-    "gulp-jshint": "^2.0.4",
-    "gulp-livereload": "^3.8.1",
-    "gulp-notify": "^3.0.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^3.1.0"
-  }
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "start": "http-server",
+        "build": "gulp build",
+        "watch-styles": "gulp"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^3.1.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-embedlr": "^0.5.2",
+        "gulp-jshint": "^2.0.4",
+        "gulp-livereload": "^3.8.1",
+        "gulp-notify": "^3.0.0",
+        "gulp-plumber": "^1.1.0",
+        "gulp-sass": "^3.1.0"
+    }
 }
