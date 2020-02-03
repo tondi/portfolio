@@ -46,7 +46,7 @@ gulp.task('watch', function() {
 
 // build
 gulp.task('copy', function() {
-    gulp.src(['index.html', 'style.css, *.js'])
+    gulp.src(['index.html', 'style.css', 'projects.js'])
         .pipe(gulp.dest('build'))
 
     gulp.src('assets/*').pipe(gulp.dest('build/assets'));
