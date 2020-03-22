@@ -4,6 +4,11 @@ function ProjectsComponent() {
             demo: 'https://tondi.pl/powietrze',
             image: 'air-info.png',
             description: 'Current and historical air pollution statistics for Krakow',
+        }, {
+            src: 'https://github.com/tondi/rosetheme2/tree/master/css/src',
+            demo: 'https://psycholog-roza.pl',
+            image: 'centrumroza.png',
+            description: 'Mobile first WP Theme',
         },
         {
             customTemplate: `<div class="project">
