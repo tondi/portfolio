@@ -168,6 +168,7 @@
         margin: 5px 0;
         @include respond-to(small) {
             margin: 0 14px 10px 0;
+            min-width: 400px;
         }
     }
 }

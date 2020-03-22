@@ -214,7 +214,8 @@ body {
   margin: 5px 0; }
   @media (min-width: 767px) {
     .project-container .fill-space {
-      margin: 0 14px 10px 0; } }
+      margin: 0 14px 10px 0;
+      min-width: 400px; } }
 
 footer {
   position: absolute;
