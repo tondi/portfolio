@@ -210,7 +210,11 @@ body {
 
 .project-container .fill-space {
   -ms-flex: 1;
-  flex: 1; }
+  flex: 1;
+  margin: 5px 0; }
+  @media (min-width: 767px) {
+    .project-container .fill-space {
+      margin: 0 14px 10px 0; } }
 
 footer {
   position: absolute;
