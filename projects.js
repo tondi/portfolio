@@ -1,9 +1,9 @@
 function ProjectsComponent() {
     var projects = [{
-            src: 'https://github.com/tondi/rosetheme2/tree/master/css/src',
-            demo: 'https://psycholog-roza.pl',
-            image: 'centrumroza.png',
-            description: 'Mobile first WP Theme',
+            src: 'https://github.com/tondi/air-info',
+            demo: 'https://tondi.pl/powietrze',
+            image: 'air-info.png',
+            description: 'Current and historical air pollution statistics for Krakow',
         },
         {
             customTemplate: `<div class="project">
