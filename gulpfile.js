@@ -16,7 +16,7 @@ var plumberErrorHandler = {
 
 // TODO unify copied code
 gulp.task('_sass', function() {
-    gulp.src('./scss/style.scss')
+    return gulp.src('./scss/style.scss')
         .pipe(plumber(plumberErrorHandler))
         .pipe(sass())
         .pipe(autoprefixer({
@@ -28,7 +28,7 @@ gulp.task('_sass', function() {
 })
 
 gulp.task('sass', function() {
-    gulp.src('./scss/style.scss')
+    return gulp.src('./scss/style.scss')
         .pipe(plumber(plumberErrorHandler))
         .pipe(sass())
         .pipe(autoprefixer({
@@ -49,10 +49,10 @@ gulp.task('copy', function() {
     gulp.src(['index.html', 'style.css', 'projects.js'])
         .pipe(gulp.dest('build'))
 
-    gulp.src('assets/*').pipe(gulp.dest('build/assets'));
+    return gulp.src('assets/*').pipe(gulp.dest('build/assets'));
 });
 
-gulp.task('build', ['_sass', 'copy']);
+gulp.task('build', gulp.series(['_sass', 'copy']));
 
 
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', gulp.parallel(['sass', 'watch']));
