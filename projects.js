@@ -7,6 +7,12 @@ function ProjectsComponent() {
         //     description: 'Current and historical air pollution statistics for Krakow',
         // },
         {
+            src: 'https://github.com/tondi/physics',
+            demo: 'https://tondi.github.io/physics/',
+            image: 'physics.png',
+            description: 'Canvas, vectors, basic trigonometry',
+        },
+        {
             src: 'https://github.com/tondi/rosetheme2/tree/master/css/src',
             demo: 'https://psycholog-roza.pl',
             image: 'centrumroza.png',
